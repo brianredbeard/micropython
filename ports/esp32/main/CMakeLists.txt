@@ -1,6 +1,6 @@
 # Set location of base MicroPython directory.
 if(NOT MICROPY_DIR)
-    get_filename_component(MICROPY_DIR ${PROJECT_DIR}/../.. ABSOLUTE)
+    get_filename_component(MICROPY_DIR ${CMAKE_CURRENT_LIST_DIR}/../../.. ABSOLUTE)
 endif()
 
 # Include core source components.
@@ -16,7 +16,7 @@ if(NOT CMAKE_BUILD_EARLY_EXPANSION)
 endif()
 
 set(MICROPY_QSTRDEFS_PORT
-    ${PROJECT_DIR}/qstrdefsport.h
+    ${CMAKE_CURRENT_LIST_DIR}/../qstrdefsport.h
 )
 
 set(MICROPY_SOURCE_SHARED
@@ -48,43 +48,43 @@ set(MICROPY_SOURCE_DRIVERS
 )
 
 set(MICROPY_SOURCE_PORT
-    ${PROJECT_DIR}/main.c
-    ${PROJECT_DIR}/uart.c
-    ${PROJECT_DIR}/usb.c
-    ${PROJECT_DIR}/usb_serial_jtag.c
-    ${PROJECT_DIR}/gccollect.c
-    ${PROJECT_DIR}/mphalport.c
-    ${PROJECT_DIR}/fatfs_port.c
-    ${PROJECT_DIR}/help.c
-    ${PROJECT_DIR}/machine_bitstream.c
-    ${PROJECT_DIR}/machine_timer.c
-    ${PROJECT_DIR}/machine_pin.c
-    ${PROJECT_DIR}/machine_touchpad.c
-    ${PROJECT_DIR}/machine_adc.c
-    ${PROJECT_DIR}/machine_adcblock.c
-    ${PROJECT_DIR}/machine_dac.c
-    ${PROJECT_DIR}/machine_i2c.c
-    ${PROJECT_DIR}/machine_i2s.c
-    ${PROJECT_DIR}/machine_uart.c
-    ${PROJECT_DIR}/modmachine.c
-    ${PROJECT_DIR}/network_common.c
-    ${PROJECT_DIR}/network_lan.c
-    ${PROJECT_DIR}/network_ppp.c
-    ${PROJECT_DIR}/network_wlan.c
-    ${PROJECT_DIR}/mpnimbleport.c
-    ${PROJECT_DIR}/modsocket.c
-    ${PROJECT_DIR}/modesp.c
-    ${PROJECT_DIR}/esp32_nvs.c
-    ${PROJECT_DIR}/esp32_partition.c
-    ${PROJECT_DIR}/esp32_rmt.c
-    ${PROJECT_DIR}/esp32_ulp.c
-    ${PROJECT_DIR}/modesp32.c
-    ${PROJECT_DIR}/machine_hw_spi.c
-    ${PROJECT_DIR}/machine_wdt.c
-    ${PROJECT_DIR}/mpthreadport.c
-    ${PROJECT_DIR}/machine_rtc.c
-    ${PROJECT_DIR}/machine_sdcard.c
-    ${PROJECT_DIR}/modespnow.c
+    ${CMAKE_CURRENT_LIST_DIR}/../main.c
+    ${CMAKE_CURRENT_LIST_DIR}/../uart.c
+    ${CMAKE_CURRENT_LIST_DIR}/../usb.c
+    ${CMAKE_CURRENT_LIST_DIR}/../usb_serial_jtag.c
+    ${CMAKE_CURRENT_LIST_DIR}/../gccollect.c
+    ${CMAKE_CURRENT_LIST_DIR}/../mphalport.c
+    ${CMAKE_CURRENT_LIST_DIR}/../fatfs_port.c
+    ${CMAKE_CURRENT_LIST_DIR}/../help.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_bitstream.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_timer.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_pin.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_touchpad.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_adc.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_adcblock.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_dac.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_i2c.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_i2s.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_uart.c
+    ${CMAKE_CURRENT_LIST_DIR}/../modmachine.c
+    ${CMAKE_CURRENT_LIST_DIR}/../network_common.c
+    ${CMAKE_CURRENT_LIST_DIR}/../network_lan.c
+    ${CMAKE_CURRENT_LIST_DIR}/../network_ppp.c
+    ${CMAKE_CURRENT_LIST_DIR}/../network_wlan.c
+    ${CMAKE_CURRENT_LIST_DIR}/../mpnimbleport.c
+    ${CMAKE_CURRENT_LIST_DIR}/../modsocket.c
+    ${CMAKE_CURRENT_LIST_DIR}/../modesp.c
+    ${CMAKE_CURRENT_LIST_DIR}/../esp32_nvs.c
+    ${CMAKE_CURRENT_LIST_DIR}/../esp32_partition.c
+    ${CMAKE_CURRENT_LIST_DIR}/../esp32_rmt.c
+    ${CMAKE_CURRENT_LIST_DIR}/../esp32_ulp.c
+    ${CMAKE_CURRENT_LIST_DIR}/../modesp32.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_hw_spi.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_wdt.c
+    ${CMAKE_CURRENT_LIST_DIR}/../mpthreadport.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_rtc.c
+    ${CMAKE_CURRENT_LIST_DIR}/../machine_sdcard.c
+    ${CMAKE_CURRENT_LIST_DIR}/../modespnow.c
 )
 
 set(MICROPY_SOURCE_QSTR
