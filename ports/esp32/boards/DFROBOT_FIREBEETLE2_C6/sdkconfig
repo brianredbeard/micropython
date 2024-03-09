@@ -1,0 +1,7 @@
+CONFIG_FREERTOS_UNICORE=y
+# rb - commented these values out from the default to limit the system to the proper unicore design
+#CONFIG_BT_NIMBLE_PINNED_TO_CORE_0=n
+#CONFIG_BT_NIMBLE_PINNED_TO_CORE_1=y
+#CONFIG_BT_NIMBLE_PINNED_TO_CORE=1
+CONFIG_BT_NIMBLE_PINNED_TO_CORE_0=y
+CONFIG_BT_NIMBLE_PINNED_TO_CORE=0

@@ -1,0 +1,20 @@
+{
+    "deploy": [
+        "../deploy.md"
+    ],
+    "docs": "",
+    "features": [
+        "BLE",
+        "WiFi"
+    ],
+    "images": [
+        "https://dfimg.dfrobot.com/store/cache3/data/DFR1075/DFR1075.jpg"
+    ],
+    "mcu": "esp32-c6",
+    "product": "FireBeetle 2 ESP32 C6",
+    "thumbnail": "",
+    "url": "https://www.dfrobot.com/product-2771.html",
+    "variants": {
+    },
+    "vendor": "DF Robot"
+}
